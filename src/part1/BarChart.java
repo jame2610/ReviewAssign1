@@ -1,3 +1,6 @@
+package part1;
+
+import .*;
 import TurtleGraphics.*;
 import java.awt.Color;
 import static java.awt.Color.red;
