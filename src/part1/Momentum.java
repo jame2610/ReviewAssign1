@@ -1,7 +1,7 @@
 package part1;
 
 
-import .*;
+
 import java.util.Scanner;
 
 

@@ -1,21 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package part2;
 
-/**
- *
- * @author jame2610
- */
+import java.text.NumberFormat;
+
 public class PowerChart {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        NumberFormat nf = NumberFormat.getNumberInstance();
+        int x = 2;
+        
+        
+        System.out.format("%5s", "X"); 
+        System.out.format("%15s\n", "2X");
+        System.out.format("%5s", "--"); 
+        System.out.format("%15s\n", "---");
+       
+        for (int 2 = 0; 2 < 10; 2++) {
+            
+        }
+        System.out.println(Math.pow(x,3));
     }
-    
+
 }

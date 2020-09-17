@@ -1,21 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package part2;
 
-/**
- *
- * @author jame2610
- */
+import java.text.NumberFormat;
+
+
 public class SalaryTable {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+        NumberFormat nf = NumberFormat.getNumberInstance();
+        int salary = 40000;
+        int ras;
+        System.out.format("%5s", "YEAR");
+        System.out.format("%20s", "OLD SALARY");
+        System.out.format("%15s", "RAISE");
+        System.out.format("%20s\n", "NEWSALARY");
+        
+         System.out.format("%5s", "====");
+        System.out.format("%20s", "==========");
+        System.out.format("%15s", "=====");
+        System.out.format("%20s\n", "=========");
+    
+        for (int year = 2020; year < 2030; year++) {
+            System.out.format("%5d", year);
+            System.out.format ("%20s", nf.format(salary));
+            ras = (int)(0.03* salary);
+            System.out.format("%15s", nf.format(ras));
+            salary+= ras;
+            System.out.format("%20s\n", nf.format(salary));
+        }
     }
     
 }
